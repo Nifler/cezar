@@ -10,6 +10,7 @@ class Controller
 {
 
     private $route;
+    private $pageInfo;
 
     public function __construct(){
 
@@ -22,6 +23,9 @@ class Controller
     private function getPage(){
         if (isset($_GET['page'])){
             $this->route=strip_tags($_GET['page']);
+            unset($_GET['page']);
+            $this->pageInfo=$_GET;
+
         }else{
             $this->route='home';
         }
