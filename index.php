@@ -11,4 +11,4 @@
 
 $a=new Learn("Hello hello, my dear!!");
 
-$a->twoFrequency();
+$a->twoFrequency(); 
