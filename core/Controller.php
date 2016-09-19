@@ -20,6 +20,8 @@ class Controller
 
     }
 
+
+    //Prototype of route
     private function getPage(){
         if (isset($_GET['page'])){
             $this->route=strip_tags($_GET['page']);
@@ -29,9 +31,10 @@ class Controller
         }else{
             $this->route='home';
         }
-
     }
 
+
+    //prototype of view
     public function getView($page){
 
         $tpl=file_get_contents("view/$page.blade.php");

@@ -9,3 +9,11 @@
 function __autoload($class){
     include_once("lib/$class.inc.php");
 }
+
+require "conf.php";
+
+include "core/Controller.php";
+
+include "core/Model.php";
+
+include "core/Route.php";
