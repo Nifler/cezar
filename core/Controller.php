@@ -23,14 +23,7 @@ class Controller
 
     //Prototype of route
     private function getPage(){
-        if (isset($_GET['page'])){
-            $this->route=strip_tags($_GET['page']);
-            unset($_GET['page']);
-            $this->pageInfo=$_GET;
-
-        }else{
-            $this->route='home';
-        }
+            $this->route=Route::$path;
     }
 
 

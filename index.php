@@ -3,4 +3,3 @@
     include "system.php";
 
     new Controller();
-
