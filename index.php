@@ -1,6 +1,6 @@
 <?php
 
-    include "core/system.php";
+    include "system.php";
 
     new Controller();
 

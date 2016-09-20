@@ -37,8 +37,9 @@ class Controller
     //prototype of view
     public function getView($page){
 
-        $tpl=file_get_contents("view/$page.blade.php");
+        //$tpl=file_get_contents("view/$page.blade.php");
 
-        echo $tpl;
+        //echo $tpl;
+        include("view/$page.blade.php");
     }
 }
