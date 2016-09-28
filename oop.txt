@@ -22,3 +22,4 @@
 Приемы объектно-ориентированного программирования. Паттерны проектирования.
 
 https://www.youtube.com/watch?v=eUizyEzOJO8&list=PL6LDsbZOeyrx462VmH18qS0a9Dw9LwpSu&index=4
+M_marviychuk1963

@@ -1,13 +1,4 @@
-<html>
-    <head>
-        <title>Цезарь</title>
-    </head>
-    <body>
-        <div>
-            <a href="">Обучение</a>
-        </div>
-        <div>
-            <a href="">Расшифровка</a>
-        </div>
-    </body>
-</html>
+<form enctype="multipart/form-data" method="post" action="/file" >
+    <input type="file" name="filename">
+    <input type="submit">
+</form>
