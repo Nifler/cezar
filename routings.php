@@ -7,4 +7,6 @@
  */
 //NOT WORKING
 
-Route::get('/test', ['as' => 'test', 'uses' => 'TestController@index']);
+
+
+Route::get('test', ['as' => 'test', 'uses' => 'TestController@index']);
