@@ -20,12 +20,10 @@ class Controller
 
     }
 
-
     //Prototype of route
     private function getPage(){
             $this->route=Route::$controller;
     }
-
 
     //prototype of view
     public function getView($page){

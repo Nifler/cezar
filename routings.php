@@ -10,3 +10,9 @@
 
 
 Route::get('test', ['as' => 'test', 'uses' => 'TestController@index']);
+
+Route::post('test', ['as' => 'test', 'uses' => 'TestController@index']);
+
+Route::put('test', ['as' => 'test', 'uses' => 'TestController@index']);
+
+Route::delete('test', ['as' => 'test', 'uses' => 'TestController@index']);

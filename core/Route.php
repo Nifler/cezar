@@ -10,19 +10,15 @@ class Route{
 
     static public $routeName;       //      route name
 
-    static public $controller;       //     controller
+    static public $controller;      //      controller
 
     static private $method;         //      method in controller
 
     static public $data;            //      array of data
 
-    static public $requestMethod;   //      array of data
+    static public $requestMethod;   //      string
 
-
-
-
-
-
+    static private $routeType;      //      string 'static' or 'dynamic'
 
 
     ////////////////////////////////////////////////////////////////////////////////////////////
@@ -57,11 +53,13 @@ class Route{
         Route::makeNewRout($str,$arr);
         Route::$requestMethod='put';
     }
+
+    // delete requestMethod
+    public static function delete($str,$arr){
+        Route::makeNewRout($str,$arr);
+        Route::$requestMethod='delete';
+    }
     /////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
 
 
 
@@ -102,6 +100,6 @@ class Route{
     }
 
     static public function start(){
-        $rout= new Route();
+        new Route();
     }
 }
