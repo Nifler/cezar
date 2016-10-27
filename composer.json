@@ -1,2 +1,5 @@
 {
+  "require": {
+    "illuminate/database": "^5.1"
+  }
 }
