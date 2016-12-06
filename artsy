@@ -1,0 +1,8 @@
+<?php
+require_once "vendor/autoload.php";
+use Symfony\Component\Console\Application;
+
+$app = new Application("Artsy, little brother of Artisan", "1.0");
+
+$app->run();
+

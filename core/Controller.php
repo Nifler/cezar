@@ -29,7 +29,7 @@ class Controller
     public function getView($page){
 
         $tpl=file_get_contents("view/$page.blade.php");
-        echo $tpl;
+        include("view/$page.blade.php");
     }
 
 }
