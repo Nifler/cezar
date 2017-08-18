@@ -28,8 +28,16 @@ class Controller
     //prototype of view
     public function getView($page){
 
-        $tpl=file_get_contents("view/$page.blade.php");
+        $this->addHeaders();
+        if (!file_exists("view/$page.blade.php")) {
+            echo"Page not found."; die;
+        }
         include("view/$page.blade.php");
+    }
+
+    private function addHeaders()
+    {
+        header('Access-Control-Allow-Origin: *');
     }
 
 }
